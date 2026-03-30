@@ -4,7 +4,7 @@ import { RxResume } from "react-icons/rx";
 
 const Hero = () => {
   return (
-    <div className="flex flex-col justify-between items-center mt-20 px-50 lg:flex-row-reverse">
+    <div className="flex flex-col justify-between items-center mt-20 container mx-auto lg:flex-row-reverse">
       <img src={heroImg} className="max-w-sm rounded-lg" />
       <div className="flex flex-col justify-between items-start gap-4">
         <div className="bg-[#e1e7ff] text-amber-50  rounded-full px-3 py-1 flex justify-between items-center gap-3">
