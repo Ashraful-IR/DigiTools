@@ -1,6 +1,7 @@
-import React from "react";
+import React, { useState } from "react";
 
 const Products = () => {
+  const [active, setActive] = useState("products");
   return (
     <div className="container mx-auto mt-10 ">
       <div className="flex flex-col justify-between items-center gap-5">
@@ -13,10 +14,16 @@ const Products = () => {
           to boost your productivity and creativity.
         </p>
         <div className="flex justify-center items-center mt-5">
-          <button className="btn border rounded-l-full rounded-r-none bg-linear-to-r from-blue-900  to-purple-600 text-amber-50 ">
+          <button
+            className={`btn ${active === "products" ? "bg-linear-to-r from-blue-900 to-purple-600 text-amber-50":""}  rounded-l-full rounded-r-none"}`}
+            onClick={() => setActive("products")}
+          >
             Products
           </button>
-          <button className="btn border-none rounded-l-none rounded-r-full px-4 ">
+          <button
+            className={`btn ${active === "cart" ? "bg-linear-to-r from-blue-900 to-purple-600 text-amber-50":""} rounded-r-full rounded-l-none "}`}
+            onClick={() => setActive("cart")}
+          >
             Cart (0)
           </button>
         </div>
