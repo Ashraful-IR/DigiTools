@@ -8,12 +8,12 @@ const Stat = () => {
           <div className="stat-value text-4xl text-amber-50">50K+</div>
           <div className="stat-title text-lg text-amber-100">Active Users</div>
         </div>
-        <span className="w-1 h-20 bg-amber-50"></span>
+        <span className="w-0.5 h-20 bg-amber-50"></span>
         <div className=" container mx-auto flex flex-col justify-between items-center gap-5 ">
           <div className="stat-value text-4xl text-amber-50">200+</div>
           <div className="stat-title text-lg text-amber-100">Premium Tools</div>
         </div>
-        <span className="w-1 h-20 bg-amber-50"></span>
+        <span className="w-0.5 h-20 bg-amber-50"></span>
         <div className=" container mx-auto flex flex-col justify-between items-center gap-5 ">
           <div className="stat-value text-4xl text-amber-50">4.9</div>{" "}
           <div className="stat-title text-lg text-amber-100">Rating</div>

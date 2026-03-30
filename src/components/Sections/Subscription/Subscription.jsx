@@ -142,8 +142,8 @@ const Subscription = () => {
             </div>
 
             <div className="mt-6">
-              <button className="btn mx-auto w-full border rounded-full  ">
-                <p className="text-md bg-linear-to-r from-blue-900  to-purple-600 bg-clip-text text-transparent">
+              <button className="btn mx-auto w-full border rounded-full bg-linear-to-r from-blue-900  to-purple-600  ">
+                <p className="text-md  text-white">
                   Contact Sales
                 </p>
               </button>
