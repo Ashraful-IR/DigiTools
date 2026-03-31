@@ -1,5 +1,5 @@
 import React from "react";
-import aiImg from "../../../assets/products/writing_2327400 1.png";
+
 
 const Card = ({ products }) => {
   const productDetails = products;
@@ -17,7 +17,7 @@ const Card = ({ products }) => {
           </span>
         </div>
 
-        <img src={aiImg} alt="AI Tool" className="w-8 h-auto" />
+        <img src={productDetails.icon} alt={productDetails.title} className="w-8 h-auto" />
 
         <div className="flex flex-col justify-between gap-3">
           <h2 className="text-3xl font-bold">{productDetails.title}</h2>

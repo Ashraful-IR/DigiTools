@@ -2,7 +2,7 @@
 
 [
   {
-    "icon": "https://example.com/icons/ai-writing.png",
+    "icon": "https://i.ibb.co.com/VczzQmjL/design-tool.png",
     "title": "AI Writing Assistant",
     "description": "Generate high-quality content, blogs, and social media posts instantly using AI.",
     "price": 19,
@@ -15,7 +15,7 @@
     ]
   },
   {
-    "icon": "https://example.com/icons/design-pro.png",
+    "icon": "https://i.ibb.co.com/tMY9T385/operation.png",
     "title": "Pro Design Toolkit",
     "description": "Premium templates, icons, and UI kits for modern designers.",
     "price": 29,
@@ -28,7 +28,7 @@
     ]
   },
   {
-    "icon": "https://example.com/icons/template-pack.png",
+    "icon": "https://i.ibb.co.com/VpjdncQ3/portfolio.png",
     "title": "Startup Template Pack",
     "description": "Launch your startup faster with ready-made templates.",
     "price": 39,
@@ -41,7 +41,7 @@
     ]
   },
   {
-    "icon": "https://example.com/icons/seo-tool.png",
+    "icon": "https://i.ibb.co.com/FLykHNhH/social-media.png",
     "title": "SEO Booster Tool",
     "description": "Improve your search ranking with smart SEO tools.",
     "price": 25,
@@ -54,7 +54,7 @@
     ]
   },
   {
-    "icon": "https://example.com/icons/automation.png",
+    "icon": "https://i.ibb.co.com/7N00psKX/writing-2327400-1.png",
     "title": "Marketing Automation Suite",
     "description": "Automate your marketing campaigns and workflows.",
     "price": 49,
@@ -67,7 +67,7 @@
     ]
   },
   {
-    "icon": "https://example.com/icons/video-ai.png",
+    "icon": "https://i.ibb.co.com/FLykHNhH/social-media.png",
     "title": "AI Video Generator",
     "description": "Create professional videos from text in minutes.",
     "price": 35,
@@ -80,7 +80,7 @@
     ]
   },
   {
-    "icon": "https://example.com/icons/code-assist.png",
+    "icon": "https://i.ibb.co.com/FLykHNhH/social-media.png",
     "title": "Code Assistant Pro",
     "description": "Boost your coding productivity with AI suggestions.",
     "price": 20,
@@ -93,7 +93,7 @@
     ]
   },
   {
-    "icon": "https://example.com/icons/social-media.png",
+    "icon": "https://i.ibb.co.com/FLykHNhH/social-media.png",
     "title": "Social Media Manager",
     "description": "Schedule and manage all your social media in one place.",
     "price": 18,
@@ -106,7 +106,7 @@
     ]
   },
   {
-    "icon": "https://example.com/icons/ecommerce.png",
+    "icon": "https://i.ibb.co.com/FLykHNhH/social-media.png",
     "title": "E-commerce Toolkit",
     "description": "All-in-one solution to build and manage online stores.",
     "price": 45,
@@ -117,18 +117,6 @@
       "Order Tracking",
       "Customer Insights"
     ]
-  },
-  {
-    "icon": "https://example.com/icons/cloud-storage.png",
-    "title": "Cloud Storage Pro",
-    "description": "Secure cloud storage with fast access and backup.",
-    "price": 15,
-    "tag": "new",
-    "feature": [
-      "1TB Storage",
-      "File Sharing",
-      "Data Encryption",
-      "Auto Backup"
-    ]
   }
+  
 ]
