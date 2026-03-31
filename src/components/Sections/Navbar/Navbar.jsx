@@ -1,5 +1,6 @@
 import React from "react";
 import { CiShoppingCart } from "react-icons/ci";
+import Cart from "../Cart/Cart";
 
 const Navbar = () => {
   return (
@@ -67,10 +68,13 @@ const Navbar = () => {
           </li>
         </ul>
       </div>
-      <div className="navbar-end gap-7">
-        <a className="text-2xl">
-          <CiShoppingCart />
-        </a>
+      <div className="navbar-end gap-7 ">
+        <button onClick={() => <Cart />} className="btn btn-ghost relative">
+          <CiShoppingCart className="w-6 h-6"/>
+          <p className="absolute -top-1 -right-0.5 text-black text-sm rounded-full h-5 w-5 flex items-center justify-center">
+            0
+          </p>
+        </button>
         <a className=" text-4">Login</a>
         <a className="btn border rounded-full bg-linear-to-r from-blue-900  to-purple-600 text-amber-50">
           Get Started
