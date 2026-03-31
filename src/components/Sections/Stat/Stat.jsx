@@ -3,7 +3,7 @@ import React from "react";
 const Stat = () => {
   return (
     <>
-      <div className="mt-10 bg-linear-to-r from-blue-900  to-purple-600  py-10 flex flex-col justify-between items-center gap-5 lg:flex-row">
+      <div className="mt-10 bg-linear-to-r from-blue-900  to-purple-600  py-10 flex flex-row justify-between items-center gap-5">
         <div className=" container mx-auto flex flex-col justify-between items-center gap-5 ">
           <div className="stat-value text-4xl text-amber-50">50K+</div>
           <div className="stat-title text-lg text-amber-100">Active Users</div>

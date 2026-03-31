@@ -4,10 +4,10 @@ import { RxResume } from "react-icons/rx";
 
 const Hero = () => {
   return (
-    <div className="flex flex-col justify-between items-center mt-20 container mx-auto lg:flex-row-reverse">
+    <div className="flex flex-col justify-between items-center gap-5 mt-20 container mx-auto lg:flex-row-reverse">
       <img src={heroImg} className="max-w-sm rounded-lg" />
-      <div className="flex flex-col justify-between items-start gap-4">
-        <div className="bg-[#e1e7ff] text-amber-50  rounded-full px-3 py-1 flex justify-between items-center gap-3">
+      <div className="flex flex-col justify-between items-start gap-4 px-5 sm:px-0">
+        <div className="bg-[#e1e7ff] text-amber-50 rounded-full px-3 py-1 flex justify-between items-center gap-3">
           <div className="h-3 w-3 rounded-full bg-purple-300 items-center flex justify-center">
             <div className="h-2 w-2 rounded-full bg-purple-500 items-center flex justify-center">
               <div className="h-1 w-1 rounded-full bg-purple-900"></div>
@@ -18,7 +18,7 @@ const Hero = () => {
           </p>
         </div>
         <div className="flex flex-col gap-5">
-          <h1 className="text-5xl font-bold">
+          <h1 className="text-4xl sm:text-5xl font-bold">
             Supercharge Your <br />
             Digital Workflow
           </h1>

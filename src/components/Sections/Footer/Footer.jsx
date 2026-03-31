@@ -5,9 +5,9 @@ const Footer = () => {
   return (
     <>
       <footer className="footer mx-auto flex flex-col  sm:footer-horizontal bg-neutral text-neutral-content p-10">
-        <div className="container mx-auto flex justify-between items-center">
-          <div className="mx-auto gap-4 mt-5 flex flex-col justify-between items-start">
-            <h6 className="text-4xl font-bold">DigiTools</h6>
+        <div className="container mx-auto grid grid-cols-2 items-center sm:grid-cols-5 gap-10">
+          <div className="mx-auto gap-4 mt-20 flex flex-col justify-between items-start">
+            <h6 className="text-2xl sm:text-4xl font-bold">DigiTools</h6>
             <p className="text-4 text-white opacity-50">
               YPremium digital tools for creators,
               <br /> professionals, and businesses. Work smarter <br /> with our
@@ -21,7 +21,7 @@ const Footer = () => {
             <a className="link link-hover">Templates</a>
             <a className="link link-hover">Integrations</a>
           </div>
-          <div className="mx-auto gap-4 mt-20 flex flex-col justify-between items-start">
+          <div className="sm:mx-auto gap-4 mt-20 flex flex-col justify-between items-start">
             <h6 className="footer-title">Company</h6>
             <a className="link link-hover">About</a>
             <a className="link link-hover">Blog</a>
@@ -35,7 +35,7 @@ const Footer = () => {
             <a className="link link-hover">Community</a>
             <a className="link link-hover">Contact</a>
           </div>
-          <div className="mx-auto gap-4 flex flex-col justify-between items-start">
+          <div className="mx-25  sm:mx-auto gap-4 mt-20 flex flex-col justify-between items-start">
             <h6 className="footer-title">Social Links</h6>
             <div className="flex justify-between items-center gap-5 text-4xl">
               <a className="link link-hover">
@@ -51,12 +51,13 @@ const Footer = () => {
           </div>
         </div>
         <div className="container mx-auto w-full h-0.5 bg-gray-600"></div>
-        <div className="container mx-auto flex justify-between items-center text-center text-sm text-gray-500 w-full ">
+
+        <div className="container mx-auto flex flex-col sm:flex-row justify-between items-center text-center text-sm text-gray-500 w-full ">
           <div>
             &copy; {new Date().getFullYear()} DigiTools. All rights reserved.
           </div>
 
-          <div className="flex justify-end items-center gap-3">
+          <div className="flex  justify-end items-center gap-3">
             <a className="link link-hover">Terms of Service</a> |
             <a className="link link-hover">Privacy Policy</a> |
             <a className="link link-hover">Privacy Policy</a>
