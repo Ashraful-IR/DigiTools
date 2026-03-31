@@ -44,7 +44,7 @@ const Credential = () => {
             </div>
 
             <div className="w-20 h-20 rounded-full flex justify-center items-center mx-auto mb-4 bg-purple-100">
-              <img src={packageImg} alt="Package" className="mx-auto mb-4" />
+              <img src={packageImg} alt="Package" className="mx-auto " />
             </div>
 
             <h2 className="text-xl font-bold text-center">Choose Products</h2>
@@ -63,7 +63,7 @@ const Credential = () => {
             </div>
 
             <div className="w-20 h-20 rounded-full flex justify-center items-center mx-auto mb-4 bg-purple-100">
-              <img src={rocketImg} alt="Rocket" className="mx-auto mb-4" />
+              <img src={rocketImg} alt="Rocket" className="mx-auto" />
             </div>
 
             <h2 className="text-xl font-bold text-center">Start Creating</h2>
