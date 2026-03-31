@@ -28,7 +28,7 @@ const Products = () => {
           </button>
         </div>
       </div>
-      <div className="rounded-xl p-2 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-10">
+      <div className="rounded-xl p-2 grid grid-cols-1  md:grid-cols-2 lg:grid-cols-3 gap-6 mt-10">
         <div className="card w-96 bg-base-100 shadow-sm">
           <div className="card-body">
             <span className="badge badge-xs badge-warning">Most Popular</span>
