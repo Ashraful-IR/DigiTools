@@ -1,3 +1,4 @@
+import { Suspense } from "react";
 import "./App.css";
 import Credential from "./components/Sections/Credential/Credential";
 import Explore from "./components/Sections/Explore/Explore";
@@ -8,7 +9,15 @@ import Products from "./components/Sections/Products/Products";
 import Stat from "./components/Sections/Stat/Stat";
 import Subscription from "./components/Sections/Subscription/Subscription";
 
+const productDetails = async () => {
+  const response = await fetch("/data.json");
+  const data = await response.json();
+  return data;
+};
+
 function App() {
+
+  const products = productDetails();
   return (
     <>
       <header>
@@ -17,7 +26,9 @@ function App() {
       <main>
         <Hero />
         <Stat />
-        <Products />
+        <Suspense fallback={<div>Loading Products...</div>}>
+          <Products products={products} />
+        </Suspense>
         <Credential />
         <Subscription />
         <Explore />

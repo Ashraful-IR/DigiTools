@@ -1,0 +1,134 @@
+
+
+[
+  {
+    "icon": "https://example.com/icons/ai-writing.png",
+    "title": "AI Writing Assistant",
+    "description": "Generate high-quality content, blogs, and social media posts instantly using AI.",
+    "price": 19,
+    "tag": "popular",
+    "feature": [
+      "Unlimited Content Generation",
+      "SEO Optimization",
+      "Multi-language Support",
+      "Tone Customization"
+    ]
+  },
+  {
+    "icon": "https://example.com/icons/design-pro.png",
+    "title": "Pro Design Toolkit",
+    "description": "Premium templates, icons, and UI kits for modern designers.",
+    "price": 29,
+    "tag": "bestSeller",
+    "feature": [
+      "500+ UI Components",
+      "Figma & PSD Files",
+      "Commercial License",
+      "Weekly Updates"
+    ]
+  },
+  {
+    "icon": "https://example.com/icons/template-pack.png",
+    "title": "Startup Template Pack",
+    "description": "Launch your startup faster with ready-made templates.",
+    "price": 39,
+    "tag": "new",
+    "feature": [
+      "Landing Pages",
+      "Admin Dashboard",
+      "Fully Responsive",
+      "Easy Customization"
+    ]
+  },
+  {
+    "icon": "https://example.com/icons/seo-tool.png",
+    "title": "SEO Booster Tool",
+    "description": "Improve your search ranking with smart SEO tools.",
+    "price": 25,
+    "tag": "popular",
+    "feature": [
+      "Keyword Research",
+      "Competitor Analysis",
+      "On-page SEO",
+      "Rank Tracking"
+    ]
+  },
+  {
+    "icon": "https://example.com/icons/automation.png",
+    "title": "Marketing Automation Suite",
+    "description": "Automate your marketing campaigns and workflows.",
+    "price": 49,
+    "tag": "bestSeller",
+    "feature": [
+      "Email Automation",
+      "Lead Management",
+      "CRM Integration",
+      "Analytics Dashboard"
+    ]
+  },
+  {
+    "icon": "https://example.com/icons/video-ai.png",
+    "title": "AI Video Generator",
+    "description": "Create professional videos from text in minutes.",
+    "price": 35,
+    "tag": "new",
+    "feature": [
+      "Text-to-Video",
+      "Voiceover AI",
+      "Stock Footage Library",
+      "HD Export"
+    ]
+  },
+  {
+    "icon": "https://example.com/icons/code-assist.png",
+    "title": "Code Assistant Pro",
+    "description": "Boost your coding productivity with AI suggestions.",
+    "price": 20,
+    "tag": "popular",
+    "feature": [
+      "Auto Code Completion",
+      "Bug Detection",
+      "Multi-language Support",
+      "IDE Integration"
+    ]
+  },
+  {
+    "icon": "https://example.com/icons/social-media.png",
+    "title": "Social Media Manager",
+    "description": "Schedule and manage all your social media in one place.",
+    "price": 18,
+    "tag": "bestSeller",
+    "feature": [
+      "Post Scheduler",
+      "Analytics Reports",
+      "Multi-platform Support",
+      "Auto Posting"
+    ]
+  },
+  {
+    "icon": "https://example.com/icons/ecommerce.png",
+    "title": "E-commerce Toolkit",
+    "description": "All-in-one solution to build and manage online stores.",
+    "price": 45,
+    "tag": "popular",
+    "feature": [
+      "Product Management",
+      "Payment Integration",
+      "Order Tracking",
+      "Customer Insights"
+    ]
+  },
+  {
+    "icon": "https://example.com/icons/cloud-storage.png",
+    "title": "Cloud Storage Pro",
+    "description": "Secure cloud storage with fast access and backup.",
+    "price": 15,
+    "tag": "new",
+    "feature": [
+      "1TB Storage",
+      "File Sharing",
+      "Data Encryption",
+      "Auto Backup"
+    ]
+  }
+]
