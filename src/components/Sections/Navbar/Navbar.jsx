@@ -71,7 +71,7 @@ const Navbar = () => {
       <div className="navbar-end gap-7 ">
         <button onClick={() => <Cart />} className="btn btn-ghost relative">
           <CiShoppingCart className="w-6 h-6"/>
-          <p className="absolute -top-1 -right-0.5 text-black text-sm rounded-full h-5 w-5 flex items-center justify-center">
+          <p className="absolute -top-1 -right-0.5 bg-purple-500 text-white text-sm rounded-full h-5 w-5 flex items-center justify-center">
             0
           </p>
         </button>

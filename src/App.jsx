@@ -8,6 +8,7 @@ import Navbar from "./components/Sections/Navbar/Navbar";
 import Products from "./components/Sections/Products/Products";
 import Stat from "./components/Sections/Stat/Stat";
 import Subscription from "./components/Sections/Subscription/Subscription";
+import { Bounce, ToastContainer } from "react-toastify";
 
 const productDetails = async () => {
   const response = await fetch("/data.json");
@@ -36,7 +37,23 @@ function App() {
       <footer>
         <Footer />
       </footer>
+
+      <ToastContainer
+position="top-right"
+autoClose={5000}
+hideProgressBar={false}
+newestOnTop={false}
+closeOnClick={false}
+rtl={false}
+pauseOnFocusLoss
+draggable
+pauseOnHover
+theme="colored"
+transition={Bounce}
+/>
     </>
+
+    
   );
 }
 

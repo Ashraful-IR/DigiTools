@@ -1,9 +1,29 @@
-import React from "react";
-
+import React, { useState } from "react";
+import { Bounce, toast } from "react-toastify";
 
 const Card = ({ products }) => {
   const productDetails = products;
   console.log(productDetails, "card");
+
+  const [activebtn, setActivebtn] = useState(false);
+
+  const handleActiveBtn = () => {
+    const newState = !activebtn;
+    setActivebtn(newState);
+    if (!activebtn) {
+      toast.success(`${productDetails.title} added to cart!`, {
+        position: "top-right",
+        autoClose: 5000,
+        hideProgressBar: false,
+        closeOnClick: false,
+        pauseOnHover: true,
+        draggable: true,
+        progress: undefined,
+        theme: "colored",
+        transition: Bounce,
+      });
+    }
+  };
   return (
     <div className="card w-96 bg-base-100 shadow-sm ">
       <div className="card-body gap-5">
@@ -17,7 +37,11 @@ const Card = ({ products }) => {
           </span>
         </div>
 
-        <img src={productDetails.icon} alt={productDetails.title} className="w-8 h-auto" />
+        <img
+          src={productDetails.icon}
+          alt={productDetails.title}
+          className="w-8 h-auto"
+        />
 
         <div className="flex flex-col justify-between gap-3">
           <h2 className="text-3xl font-bold">{productDetails.title}</h2>
@@ -94,8 +118,12 @@ const Card = ({ products }) => {
           </li>
         </ul>
         <div className="mt-6">
-          <button className="btn b bg-linear-to-r from-blue-900  to-purple-600 rounded-full w-full text-amber-50 text-md font-normal mt-12">
-            Buy Now
+          <button
+            className={`  btn ${activebtn === false ? "bg-linear-to-r from-blue-900 to-purple-600 " : "bg-white border border-green-300 text-green-500 "}text-amber-50  rounded-full w-full`}
+            onClick={handleActiveBtn}
+            disabled={activebtn}
+          >
+            {`${activebtn === false ? "Buy Now" : "Added to Cart"}`}
           </button>
         </div>
       </div>
