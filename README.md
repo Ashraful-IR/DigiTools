@@ -1,16 +1,33 @@
-# React + Vite
+# Digi Tools
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+<p align="center">
+	<img src="https://img.shields.io/badge/React-19-61DAFB?style=for-the-badge&logo=react&logoColor=black" alt="React badge" />
+	<img src="https://img.shields.io/badge/Vite-8-646CFF?style=for-the-badge&logo=vite&logoColor=white" alt="Vite badge" />
+	<img src="https://img.shields.io/badge/TailwindCSS-4-06B6D4?style=for-the-badge&logo=tailwindcss&logoColor=white" alt="Tailwind badge" />
+</p>
 
-Currently, two official plugins are available:
+## A Little Description
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+Digi Tools is a modern product showcase and cart experience for digital tools. Users can explore plans, add products to a cart, review total pricing, and proceed with a streamlined checkout flow.
 
-## React Compiler
+## Technology Used
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- React 19
+- Vite 8
+- Tailwind CSS 4
+- DaisyUI
+- React Toastify
+- React Icons
 
-## Expanding the ESLint configuration
+## Features
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+1. Dynamic product listing loaded from `public/data.json` for easy content updates.
+2. Interactive cart management with add/remove actions and real-time total calculation.
+3. Clean user feedback with toast notifications for cart actions and checkout flow.
+
+## Quick Start
+
+```bash
+npm install
+npm run dev
+```

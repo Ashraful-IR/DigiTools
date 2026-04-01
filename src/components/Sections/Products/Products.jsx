@@ -5,8 +5,6 @@ import AvailableProduct from "../AvailableProduct/AvailableProduct";
 
 const Products = ({ products, selectedProducts, setSelectedProducts }) => {
   const [active, setActive] = useState("products");
-  
-
 
   return (
     <>
@@ -36,11 +34,18 @@ const Products = ({ products, selectedProducts, setSelectedProducts }) => {
           </div>
         </div>
 
-
         {active === "products" ? (
-          <AvailableProduct products={products} setSelectedProducts={setSelectedProducts} selectedProducts={selectedProducts} />
+          <AvailableProduct
+            products={products}
+            setSelectedProducts={setSelectedProducts}
+            selectedProducts={selectedProducts}
+          />
         ) : (
-          <Cart products={products} selectedProducts={selectedProducts} />
+          <Cart
+            products={products}
+            selectedProducts={selectedProducts}
+            setSelectedProducts={setSelectedProducts}
+          />
         )}
       </div>
     </>
