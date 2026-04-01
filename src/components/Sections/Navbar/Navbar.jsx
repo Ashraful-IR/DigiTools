@@ -2,7 +2,9 @@ import React from "react";
 import { CiShoppingCart } from "react-icons/ci";
 import Cart from "../Cart/Cart";
 
-const Navbar = () => {
+const Navbar = ({ products, selectedProducts, setSelectedProducts }) => {
+  console.log(products, "navbar");
+  console.log(setSelectedProducts, selectedProducts, "navbar");
   return (
     <div className="navbar bg-base-100 shadow-sm md:px-50">
       <div className="navbar-start">
@@ -72,7 +74,7 @@ const Navbar = () => {
         <button onClick={() => <Cart />} className="btn btn-ghost relative">
           <CiShoppingCart className="w-6 h-6"/>
           <p className="absolute -top-1 -right-0.5 bg-purple-500 text-white text-sm rounded-full h-5 w-5 flex items-center justify-center">
-            0
+            {selectedProducts.length}
           </p>
         </button>
         <a className=" text-4">Login</a>

@@ -3,8 +3,10 @@ import Card from "../../ui/Card/Card";
 import Cart from "../Cart/Cart";
 import AvailableProduct from "../AvailableProduct/AvailableProduct";
 
-const Products = ({ products }) => {
+const Products = ({ products, selectedProducts, setSelectedProducts }) => {
   const [active, setActive] = useState("products");
+  
+
 
   return (
     <>
@@ -29,16 +31,16 @@ const Products = ({ products }) => {
               className={`btn ${active === "cart" ? "bg-linear-to-r from-blue-900 to-purple-600 text-amber-50" : ""} rounded-r-full rounded-l-none "}`}
               onClick={() => setActive("cart")}
             >
-              Cart ({Cart.length})
+              Cart ({selectedProducts.length})
             </button>
           </div>
         </div>
 
 
         {active === "products" ? (
-          <AvailableProduct products={products} />
+          <AvailableProduct products={products} setSelectedProducts={setSelectedProducts} selectedProducts={selectedProducts} />
         ) : (
-          <Cart products={products} />
+          <Cart products={products} selectedProducts={selectedProducts} />
         )}
       </div>
     </>

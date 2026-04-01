@@ -1,4 +1,4 @@
-import { Suspense } from "react";
+import { Suspense, useState } from "react";
 import "./App.css";
 import Credential from "./components/Sections/Credential/Credential";
 import Explore from "./components/Sections/Explore/Explore";
@@ -17,18 +17,19 @@ const productDetails = async () => {
 };
 
 function App() {
-
   const products = productDetails();
+
+  const [selectedProducts, setSelectedProducts] = useState([]);
   return (
     <>
       <header>
-        <Navbar />
+        <Navbar products={products} selectedProducts={selectedProducts} setSelectedProducts={setSelectedProducts} />
       </header>
       <main>
         <Hero />
         <Stat />
         <Suspense fallback={<div>Loading Products...</div>}>
-          <Products products={products} />
+          <Products products={products} selectedProducts={selectedProducts} setSelectedProducts={setSelectedProducts} />
         </Suspense>
         <Credential />
         <Subscription />
@@ -39,21 +40,19 @@ function App() {
       </footer>
 
       <ToastContainer
-position="top-right"
-autoClose={5000}
-hideProgressBar={false}
-newestOnTop={false}
-closeOnClick={false}
-rtl={false}
-pauseOnFocusLoss
-draggable
-pauseOnHover
-theme="colored"
-transition={Bounce}
-/>
+        position="top-right"
+        autoClose={5000}
+        hideProgressBar={false}
+        newestOnTop={false}
+        closeOnClick={false}
+        rtl={false}
+        pauseOnFocusLoss
+        draggable
+        pauseOnHover
+        theme="colored"
+        transition={Bounce}
+      />
     </>
-
-    
   );
 }
 

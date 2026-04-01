@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Bounce, toast } from "react-toastify";
 
-const Card = ({ products }) => {
+const Card = ({ products, setSelectedProducts, selectedProducts }) => {
   const productDetails = products;
   console.log(productDetails, "card");
 
@@ -23,6 +23,7 @@ const Card = ({ products }) => {
         transition: Bounce,
       });
     }
+    setSelectedProducts([...selectedProducts, productDetails]);
   };
   return (
     <div className="card w-96 bg-base-100 shadow-sm ">
